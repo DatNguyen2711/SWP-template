@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Login/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/bttn.css">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div class="wrapper fadeInDown">
@@ -32,21 +37,15 @@
       <input type="text" id="age" class="fadeIn third" name="age" placeholder="Age" required><br>
       <label id="icon" for="name"><i class="icon-home"></i></label>
       <input type="text" id="address" class="fadeIn third" name="address" placeholder="Address">
-      <!-- <div class ="gender">
-        <input type="radio" name="gender" value="male" > Male
-        <input type="radio" name="gender" value="female"> Female
-      </div> -->
-      
+     
  
-      <label class="container">Female
-        <input type="radio" checked="checked" name="radio">
-        <span class="checkmark"></span>
-      </label>
-      <label class="container">Male
-        <input type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
-
+     
+<div class="radio-container">
+  <input class="radio-input" id="apples" type="radio" name="fruit" />
+  <label class="radio" for="apples">Female</label>
+  <input class="radio-input" id="oranges" type="radio" name="fruit" />
+  <label class="radio" for="oranges">Male</label>
+</div>
       </label><br>
 
       <label id="icon" for="name"><i class="icon-envelope"></i></label>
@@ -63,6 +62,15 @@
             </select>
       </form>
 
+        <div class="page">
+  <div class="field field_v1">
+    <label for="first-name" class="ha-screen-reader">First name</label>
+    <input id="first-name" class="field__input" placeholder="e.g. Stanislav">
+    <span class="field__label-wrap" aria-hidden="true">
+      <span class="field__label">First name</span>
+    </span>
+  </div>
+</div>
 
 
 
