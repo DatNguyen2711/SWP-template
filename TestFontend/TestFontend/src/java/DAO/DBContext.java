@@ -27,11 +27,11 @@ public class DBContext {
         return DriverManager.getConnection(url,username,password);
     }
         String instance = "";
-        String serverName = "LAPTOP-KCTPGL4O";
+        String serverName = "DATND27";
         String portNumber = "1433";
         String dbName = "SWP391";
         String username = "sa";
-        String password = "123456";
+        String password = "234555ax";
         String url;
     public static void main(String[] args) {
         try {

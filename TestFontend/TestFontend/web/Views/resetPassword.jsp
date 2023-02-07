@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./Views/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <title>Document</title>
@@ -24,7 +24,7 @@
 
    
     <!-- Login Form -->
-    <form>
+    <form action="/TestFontend/resetPassword" method="post">
       <input type="text" id="login" class="fadeIn second" name="new-password" placeholder="New Passowrd" required>
       <input type="text" id="password" class="fadeIn third" name="confirm-password" placeholder="Confirm Passowrd" required>
 

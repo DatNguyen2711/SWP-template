@@ -84,6 +84,7 @@ public class CheckCapcha extends HttpServlet {
         }
         
         if(check){
+            
             request.getRequestDispatcher("/Views/resetPassword.jsp").forward(request, response);
         }else{
             request.setAttribute("message", "capcha is incorrect");

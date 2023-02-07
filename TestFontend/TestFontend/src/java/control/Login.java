@@ -79,13 +79,13 @@ public class Login extends HttpServlet {
         Account account = accountServices.getAccountByUsername(username);
         
         if(account==null || !account.getPassword().equals(password)){
-            message = "username or password is incorrect";
+            message = "Username or Password is incorrect !";
             request.setAttribute("message", message);
             request.getRequestDispatcher("/Views/login.jsp").forward(request, response);
         }else{
             HttpSession session = request.getSession();
             session.setAttribute("account", account);
-            response.sendRedirect("Home");
+            response.sendRedirect("home");
         }
         
     }

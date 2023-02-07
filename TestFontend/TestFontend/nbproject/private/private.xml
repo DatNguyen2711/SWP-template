@@ -2,19 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/web/Views/forgetPassword.jsp</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/src/java/control/resetPassword.java</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/src/java/control/Login.java</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/web/Views/resetPassword.jsp</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/src/java/control/Home.java</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/web/Views/css/style.css</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/web/Views/login.jsp</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/web/Views/GetCapcha.jsp</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/src/java/DAO/MailService.java</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/web/Views/register.jsp</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/src/java/control/ForgetPassword.java</file>
-            <file>file:/C:/Users/datla/Downloads/TestFontend/TestFontend/src/java/control/Register.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

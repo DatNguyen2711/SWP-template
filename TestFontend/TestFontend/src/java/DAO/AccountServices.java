@@ -73,14 +73,19 @@ public class AccountServices {
         } 
    }
    
+    public boolean verifyPassword(String password){
+        String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$";
+        return password.matches(regex);
+    }
    
     public static void main(String[] args) {
         AccountServices accountServices = new AccountServices();
 //        System.out.println(accountServices.getAccountByUsername("admin"));
 //        accountServices.resetPassword("admin", "qqq");
 //        System.out.println(accountServices.getAccountByUsername("admin"));
-        accountServices.insertAccount("admin1", "2222", "vv", 44, true, "vvvbb", "ttrf", "3333", 0);
-        System.out.println(accountServices.getAccountByUsername("admin1"));
+//        accountServices.insertAccount("admin1", "2222", "vv", 44, true, "vvvbb", "ttrf", "3333", 0);
+//        System.out.println(accountServices.getAccountByUsername("admin1"));
+        System.out.println(accountServices.verifyPassword("adacCX0893829@@"));
         
     }
 }

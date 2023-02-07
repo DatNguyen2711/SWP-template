@@ -11,7 +11,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./Views/css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     </head>
@@ -21,12 +21,12 @@
                 <!-- Tabs Titles -->
                 <!-- <h2 class="inactive underlineHover"> Sign In </h2> -->
                 <h2 class="active" >Sign Up </h2>
-                <a href="login.jsp">sign-in</a>
+                <a href="/TestFontend/login">sign-in</a>
 
 
 
                 <!-- Login Form -->
-                <form class ="signup-form">
+                <form class ="signup-form" action="/TestFontend/register" method="post">
                     <label id="icon" for="name"><i class="icon-user"></i></label>
                     <input type="text" id="login" class="fadeIn second" name="username" placeholder="username" required><br>
                     <label id="icon" for="name"><i class="icon-shield"></i></label>
