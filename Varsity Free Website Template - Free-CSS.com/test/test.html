@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="gallery">
+        <div class="image-container">
+            <img src="image4.jpg" alt="Image 4">
+            <div class="caption">Caption for Image 4</div>
+        </div>
+        <div class="image-container">
+            <img src="image4.jpg" alt="Image 4">
+            <div class="caption">Caption for Image 4</div>
+        </div>
+        <div class="image-container">
+            <img src="image4.jpg" alt="Image 4">
+            <div class="caption">Caption for Image 4</div>
+        </div>
+        <div class="image-container">
+            <img src="image4.jpg" alt="Image 4">
+            <div class="caption">Caption for Image 4</div>
+        </div>
+        <div class="image-container">
+            <img src="image5.jpg" alt="Image 5">
+            <div class="caption">Caption for Image 5</div>
+        </div>
+    </div>
+
+
+
+
+    <button id="prev" onclick="showPrevious()">Previous</button>
+    <button id="next" onclick="showNext()">Next</button>
+    <script>
+      var currentIndex = 0;
+        var items = document.getElementsByClassName('image-container');
+
+        function showItem(index, direction) {
+            var currentItem = items[currentIndex];
+            var nextItem = items[index];
+
+            currentItem.classList.remove('active');
+            nextItem.classList.add('active');
+
+            if (direction === 'next') {
+                currentItem.classList.add('animate__animated', 'animate__fadeOutLeft');
+                nextItem.classList.add('animate__animated', 'animate__fadeInLeft');
+            } else if (direction === 'prev') {
+                currentItem.classList.add('animate__animated', 'animate__fadeOutRight');
+                nextItem.classList.add('animate__animated', 'animate__fadeInRight');
+            }
+
+            // remove animations and reset opacity after animation finishes
+            setTimeout(function () {
+                currentItem.classList.remove('animate__animated', 'animate__fadeOutLeft', 'animate__fadeOutRight');
+                nextItem.classList.remove('animate__animated', 'animate__fadeInLeft', 'animate__fadeInRight');
+            }, 1000);
+        }
+
+        function showNext() {
+            var nextIndex = (currentIndex + 1) % items.length;
+            showItem(nextIndex, 'next');
+            currentIndex = nextIndex;
+        }
+
+        function showPrevious() {
+            var prevIndex = currentIndex - 1;
+            if (prevIndex < 0) {
+                prevIndex = items.length - 1;
+            }
+            showItem(prevIndex, 'prev');
+            currentIndex = prevIndex;
+        }
+
+        showItem(currentIndex, '');
+
+    </script>
+</body>
+
+</html>

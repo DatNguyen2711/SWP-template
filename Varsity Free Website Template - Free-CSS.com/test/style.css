@@ -1,0 +1,26 @@
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    margin: 10px;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+}
+
+.image-container.active {
+    opacity: 1;
+    position: static;
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 10px;
+}
